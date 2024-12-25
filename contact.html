@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Navigasyon Menüsü -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Market Logo</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="products.html">Ürünler</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <!-- İletişim Bölümü -->
+    <section class="contact-section">
+        <div class="container">
+            <h1>Bizimle İletişime Geçin</h1>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h2>İletişim Bilgileri</h2>
+                    <p><strong>Adres:</strong> Ulukoy Kumeevleri. No: 56,kurtalan, siirt, Türkiye</p>
+                    <p><strong>Telefon:</strong> +90 5356300727</p>
+                    <p><strong>E-posta:</strong> uluskislam@gmail.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <h2>Harita</h2>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.171278315678!2d-122.0842494846815!3d37.42199977982523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2b7b55b9b7%3A0x9f945e295d5b03ee!2sGoogleplex!5e0!3m2!1sen!2sus!4v1646067368227!5m2!1sen!2sus" 
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>İletişim Formu</h2>
+                <form id="contactForm">
+                    <input type="text" id="name" name="name" placeholder="Adınız" required>
+                    <input type="email" id="email" name="email" placeholder="E-posta Adresiniz" required>
+                    <textarea id="message" name="message" placeholder="Mesajınız" rows="5" required></textarea>
+                    <button type="submit">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Market Adı. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünler</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <!-- Navigasyon Menüsü -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Market Logo</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="products.html">Ürünler</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            </ul>
+
+    </nav>
+
+    <!-- Kategori Menüsü -->
+    <section class="category-menu">
+        <button onclick="filterProducts('all')">Tümü</button>
+        <button onclick="filterProducts('gida')">Gıda</button>
+        <button onclick="filterProducts('icecek')">İçecek</button>
+        <button onclick="filterProducts('sigara')">Sigara</button>
+        <button onclick="filterProducts('atistirmalik')">Atıştırmalık</button>
+        <button onclick="filterProducts('yeni')">Yeni Ürünler</button>
+    </section>
+    
+    <!--Arama Butonu-->
+    <input id="search-input" type="text" placeholder="Ürün ara...">
+    <div id="products-container"></div>
+
+    <!-- Ürün Listesi -->
+    <section class="product-list">
+        <h2>Ürünlerimiz</h2>
+        <div id="products-container">
+            <!-- Ürünler buraya JavaScript ile eklenecek -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Market Adı. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="products.js"></script>
+    <script src="sepet-products.js"></script>
+</body>
+</html>

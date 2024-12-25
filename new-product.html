@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni Ürün Ekle</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="admin.html" class="logo">Admin Paneli</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="#" id="logoutButton">Çıkış Yap</a></li>
+        </ul>
+    </nav>
+
+    <!-- Ürün Arama -->
+<input type="text" id="searchInput" placeholder="Ürün Ara..." onkeyup="searchProduct()">
+
+
+    <!-- Ürün Ekleme Formu -->
+    <section class="add-product-form">
+        <h2>Yeni Ürün Ekle</h2>
+        <form id="productForm">
+            <input type="text" id="productName" placeholder="Ürün Adı" required>
+            <input type="text" id="productDescription" placeholder="Ürün Açıklaması" required>
+            <input type="text" id="productImage" placeholder="Ürün Görsel URL" required>
+            <input type="number" id="productPrice" placeholder="Ürün Fiyatı" required>
+            <input type="number" id="productQuantity" placeholder="Ürün Adedi" required>
+            <select id="productCategory" required>
+                <option value="gida">Gıda</option>
+                <option value="icecek">İçecek</option>
+                <option value="sigara">Sigara</option>
+                <option value="atistirmalik">Atıştırmalık</option>
+                <option value="yeni">Yeni Ürünler</option>
+            </select>
+            <button type="submit">Ürün Ekle</button>
+        </form>
+    </section>
+
+    <!-- Mevcut Ürünler Listesi -->
+    <section class="product-list">
+        <h2>Mevcut Ürünler</h2>
+        <ul id="productList"></ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Market Adı. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="new-product.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

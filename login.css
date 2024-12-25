@@ -1,0 +1,83 @@
+/* Genel Stiller */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-section input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.login-section input:focus {
+    border-color: #ff6347;
+    outline: none;
+}
+
+.login-section button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-section button:hover {
+    background-color: #e85a4f;
+}
+
+.login-section p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.login-section p a {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+.login-section p a:hover {
+    text-decoration: underline;
+}
+
+/* Hata mesajı */
+.alert {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}

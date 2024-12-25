@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Paneli</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="admin.html" class="logo">Admin Paneli</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="#" id="logoutButton">Çıkış Yap</a></li>
+        </ul>
+    </nav>
+
+    <!-- Üst Navigasyon -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Market Logo</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="products.html">Ürünler</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Ürün Ara...">
+        </div>
+    </nav>
+
+    <!-- Admin Paneli İçeriği -->
+    <section class="admin-actions">
+        <h2>Admin Paneli</h2>
+        <div class="action-buttons">
+            <button onclick="window.location.href='new-product.html'">Yeni Ürün Ekle</button>
+            <button onclick="window.location.href='update-bank-info.html'">Banka Adı ve IBAN Ekle</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Market Adı. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>

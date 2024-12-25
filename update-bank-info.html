@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banka Adı ve IBAN Ekle</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="admin.html" class="logo">Admin Paneli</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="#" id="logoutButton">Çıkış Yap</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Banka Adı ve IBAN Ekleme Formu -->
+    <section class="update-bank-info">
+        <h2>Banka Adı ve IBAN Ekle</h2>
+        <form id="bankForm">
+            <input type="text" id="bankName" placeholder="Banka Adı" required>
+            <input type="text" id="iban" placeholder="IBAN" required>
+            <button type="submit">Ekle</button>
+        </form>
+
+        <!-- List of Added Bank Information -->
+        <div class="bank-list">
+            <h3>Eklenen Bankalar ve IBAN'lar</h3>
+            <ul id="bankList"></ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Market Adı. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="update-bank-info.js"></script>
+</body>
+</html>

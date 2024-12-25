@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepetim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sepet.css">
+</head>
+<body>
+    <!-- Navigasyon Menüsü -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Market Logo</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="products.html">Ürünler</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="sepet.html" class="cart-button">Sepetim</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sepet İçeriği -->
+    <section class="cart">
+        <h2>Sepetim</h2>
+        <div id="cart-container">
+            <!-- Sepet ürünleri buraya JavaScript ile eklenecek -->
+        </div>
+        <button onclick="clearCart()">Sepeti Temizle</button>
+        
+        <div class="cart-summary">
+            <p>Toplam: 0 TL</p> <!-- Toplam fiyat buraya eklenecek -->
+        </div>
+        
+        <button id="checkout-button" onclick="checkout()">Alışverişi Tamamla</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Market Adı. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <!--<script src="sepet.js"></script>-->
+    <script src="sepet-products.js"></script>
+    
+</body>
+</html>

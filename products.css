@@ -1,0 +1,189 @@
+.category-menu {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.category-menu button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.category-menu button:hover {
+    background-color: #e5533d;
+}
+
+.add-product-form {
+    margin: 2rem;
+    text-align: center;
+}
+
+.add-product-form form {
+    display: inline-block;
+    text-align: left;
+}
+
+.add-product-form input, 
+.add-product-form select {
+    display: block;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.add-product-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-product-form button:hover {
+    background-color: #218838;
+}
+
+
+
+.product-list {
+    padding: 2rem;
+}
+.product-list h2 {
+    text-align: center;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-item p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-item button {
+    background-color: #ff6347;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* Ürün Listesi Konteyneri */
+.product-list {
+    padding: 2rem;
+}
+
+/* Ürün Konteyneri */
+#products-container {
+    display: flex;
+    flex-wrap: wrap; /* Ürünler sığmadığında bir alt satıra geçmesini sağlar */
+    gap: 1rem; /* Ürünler arasındaki boşluk */
+}
+
+/* Ürün Öğesi */
+.product-item {
+    flex: 1 1 calc(33.333% - 1rem); /* Ürünler genişliğini ayarla, 3 sütunlu bir düzen sağlar */
+    box-sizing: border-box; /* Padding ve border'ı genişliğe dahil et */
+    border: 1px solid #ddd; /* Ürün kenarlarına hafif bir sınır */
+    padding: 1rem; /* Ürün içindeki boşluk */
+    border-radius: 8px; /* Kenarları yuvarlat */
+    background-color: #fff; /* Arka plan rengini beyaz yap */
+    text-align: center; /* Yazıyı ortala */
+}
+
+.product-item img {
+    max-width: 100%; /* Görselin genişliği konteyneri aşmasın */
+    height: auto; /* Yüksekliği otomatik ayarla */
+    border-radius: 8px; /* Görsel köşelerini yuvarlat */
+    margin-bottom: 0.5rem; /* Görsel ile metin arasına boşluk ekle */
+}
+
+.product-item h3 {
+    margin: 0.5rem 0; /* Başlık ile diğer öğeler arasında boşluk ekle */
+}
+
+.product-item button {
+    background-color: #007bff; /* Buton arka plan rengi */
+    color: white; /* Buton yazı rengi */
+    border: none; /* Buton kenarını kaldır */
+    padding: 0.5rem 1rem; /* Buton içindeki boşluk */
+    border-radius: 4px; /* Buton köşelerini yuvarlat */
+    cursor: pointer; /* Butona tıklanabilir işareti ekle */
+    margin-top: 0.5rem; /* Buton ile diğer öğeler arasında boşluk ekle */
+}
+
+.product-item button:hover {
+    background-color: #0056b3; /* Hover efekt rengi */
+}
+/* Ürün Listesi Konteyneri */
+.product-list {
+    padding: 2rem;
+}
+
+/* Ürün Konteyneri */
+#products-container {
+    display: flex;
+    flex-wrap: wrap; /* Ürünler sığmadığında bir alt satıra geçmesini sağlar */
+    gap: 1rem; /* Ürünler arasındaki boşluk */
+}
+
+/* Ürün Öğesi */
+.product-item {
+    flex: 1 1 calc(33.333% - 1rem); /* Ürünler genişliğini ayarla, 3 sütunlu bir düzen sağlar */
+    box-sizing: border-box; /* Padding ve border'ı genişliğe dahil et */
+    border: 1px solid #ddd; /* Ürün kenarlarına hafif bir sınır */
+    padding: 1rem; /* Ürün içindeki boşluk */
+    border-radius: 8px; /* Kenarları yuvarlat */
+    background-color: #fff; /* Arka plan rengini beyaz yap */
+    text-align: center; /* Yazıyı ortala */
+}
+
+.product-item img {
+    max-width: 100%; /* Görselin genişliği konteyneri aşmasın */
+    height: auto; /* Yüksekliği otomatik ayarla */
+    border-radius: 8px; /* Görsel köşelerini yuvarlat */
+    margin-bottom: 0.5rem; /* Görsel ile metin arasına boşluk ekle */
+}
+
+.product-item h3 {
+    margin: 0.5rem 0; /* Başlık ile diğer öğeler arasında boşluk ekle */
+}
+
+.product-item button {
+    background-color: #007bff; /* Buton arka plan rengi */
+    color: white; /* Buton yazı rengi */
+    border: none; /* Buton kenarını kaldır */
+    padding: 0.5rem 1rem; /* Buton içindeki boşluk */
+    border-radius: 4px; /* Buton köşelerini yuvarlat */
+    cursor: pointer; /* Butona tıklanabilir işareti ekle */
+    margin-top: 0.5rem; /* Buton ile diğer öğeler arasında boşluk ekle */
+}
+
+.product-item button:hover {
+    background-color: #0056b3; /* Hover efekt rengi */
+}
+
+
