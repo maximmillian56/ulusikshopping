@@ -197,3 +197,7 @@ function checkout() {
 
 // Sayfa yüklendiğinde sepet ürünlerini göster
 document.addEventListener('DOMContentLoaded', displayCartItems);
+
+function checkout() {
+    window.location.href = 'bank-list.html'; // Banka bilgileri sayfasına yönlendir
+}

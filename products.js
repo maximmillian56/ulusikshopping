@@ -1,4 +1,3 @@
-// Sayfa yüklendiğinde tüm ürünleri göster
 document.addEventListener('DOMContentLoaded', () => {
     addProducts('all'); // Tüm ürünleri göster
     setupSearch(); // Arama fonksiyonunu başlat
@@ -28,6 +27,13 @@ function addProducts(category = 'all', searchQuery = '') {
         `;
         productsContainer.appendChild(productElement);
     });
+}
+
+// Kategoriye göre filtreleme fonksiyonu
+function filterProducts(category) {
+    const searchInput = document.getElementById('search-input');
+    const searchQuery = searchInput.value; // Arama kutusundaki sorguyu al
+    addProducts(category, searchQuery); // Kategori ve arama sorgusuna göre ürünleri filtrele
 }
 
 // Sepete ürün ekleme fonksiyonu
